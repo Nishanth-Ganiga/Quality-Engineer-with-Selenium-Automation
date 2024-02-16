@@ -1,0 +1,40 @@
+1. TestNG: https://youtu.be/VE34sucZnhU?si=r2_cvdjZ5hazHs2I
+2. Annotations in TestNG:
+@Test
+@BeforeSuite
+@AfterSuite
+@BeforeTest
+@AfterTest
+@BeforeClass
+@AfterClass
+@BeforeMethod
+@AfterMethod
+
+3. @DataProvier Annotation: It is used to provide the data through methods in a two-dimensional arrray format
+Syntax: @DataProvider(name = "testData")
+
+4. Testing.xml: https://youtu.be/iEOZ2FmTWe0?si=KPISblsYRrixMOct
+5. Listener methods:
+OnTestStart()
+OnTestSuccess()
+OnTestFailure()
+OnTestSkipped()
+OnTestFailedButWithinSuccessPercentage()
+OnStart()
+OnFinish()
+
+6. TestNG allows to specify dependencies with
+a) dependsOnMethods in @TestAnnotations
+b) dependsOnGroups in @TestAnnotations
+
+7. Hard vs Soft asserts: https://youtu.be/qaLOTq2zPXU?si=NGnHKme2FXK_b69i
+8. Assertion provided by TestNG:
+assertEquals(Actual result,Expected result)
+assertEquals(AR,ER,"Message")
+assertEquals(Boolean actual,Boolean expected)
+assertTrue(Condition)
+assertTrue(C,"Message")
+assertFalse(c)
+assertFalse(C,"Message")
+
+9. TestNG vs Junit: https://youtu.be/050kgPi_trs?si=QIVxWpByZvma1r3h
