@@ -1,0 +1,49 @@
+1. Selenium: It is a open source automation testing framework which will be used to validate web application accross different browsers and platforms.
+
+2. Components of Selenium
+Selenium IDE
+Selenium RC
+Selenium Web driver
+Selenium Grid : https://youtu.be/4K3uZHt8cLY?si=Vqdx3ybN8njzGAkW
+
+3. Relative vs absolute xpath : https://youtu.be/ZNgvR-Vbxjk?si=tP4DGMEybAKH1u5t
+
+4. Locators
+class name
+css selector
+id
+name
+linktext
+partiallinktext
+tagname
+xpath
+
+5. webdriver commands
+browser commands
+Navigate commands
+webelement commands
+
+6. browser commands
+get 
+get title
+get url
+get page source
+close
+quit
+
+7. Navigate commands
+to
+forward
+back
+refresh
+
+8. webelement commands
+clear
+sendKeys
+click
+
+9. Handle dropdowns
+selectbyvalue
+selectbyindex
+selectbyvisualtext
+

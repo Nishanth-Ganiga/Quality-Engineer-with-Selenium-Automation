@@ -1,0 +1,50 @@
+1. POM? : The Page Object Model (POM) is a design pattern used in Selenium automation testing to enhance test maintenance and readability. It's like organizing your test automation code into manageable modules, making it easier to maintain and understand.
+
+2. Properties class: Used to store keyvalue pairs
+a) setProperty()
+b) getProperty()
+
+3. ANT vs Maven:
+Apache Ant:
+
+Focuses on task execution and offers flexibility.
+Uses XML for build scripts.
+Requires manual dependency management.
+More procedural in nature.
+
+Apache Maven:
+
+Emphasizes convention over configuration.
+Uses declarative POM XML for project configuration.
+Provides built-in dependency management.
+Offers a rich ecosystem of plugins and follows a standardized project structure.
+
+4. Advantage of maven?
+Easy to build
+contains information about project
+migrate new features to maven
+it has uniform build process
+
+5.  Apache Maven helps manage:
+
+Dependency resolution
+Build automation
+Standardized project structure
+Plugin management
+Reporting
+Documentation generation
+Release management
+
+6. Maven repositories
+Local
+remote
+central
+
+7. Frameworks
+Apache POI
+Keyword driver 
+data driven
+hybrid
+modular driver
+test driver
+BDD

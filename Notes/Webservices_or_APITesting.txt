@@ -1,0 +1,128 @@
+1. Client server : https://youtu.be/B8azMzrluHE?si=XWEqOcpJQx8O2rj7
+2. Layers: https://youtu.be/js5Q_r1vV6s?si=WaWDqEo0rJKQg4Ti
+3. API: https://youtu.be/XGa4onZP66Q?si=qnC3WdHHSyk9rnHH
+4. Diff btw Api and Webservice: https://youtu.be/8nOTE8owKy0?si=-0RpPlqFbAp9wJqI
+
+API (Application Programming Interface):
+
+An API is a set of rules, protocols, and tools that allows different software applications to communicate with each other.
+APIs can be classified into several types, including:
+Web APIs: These are APIs that are accessible over the web using HTTP protocols. They are often used for communication between web-based applications.
+Library APIs: These are APIs provided by libraries or frameworks within a programming language. They define functions, classes, and methods that developers can use to interact with the library or framework.
+Operating System APIs: These are APIs provided by operating systems that allow applications to access operating system functionality such as file system operations, networking, and device management.
+APIs can be used for various purposes, including data retrieval, authentication, integration with third-party services, and more.
+
+Web Service:
+
+A web service is a type of API that is accessed over a network, typically the internet. It allows different software applications to communicate with each other using standard protocols such as HTTP and SOAP (Simple Object Access Protocol) or REST (Representational State Transfer).
+Web services provide a standardized way for applications to exchange data and invoke procedures or functions remotely.
+
+5. Rest vs Soap vs Web api: https://youtu.be/2mqN7ZhDsUA?si=-ppIvZVr9zyZjCJh
+6. Api testing: 
+API testing refers to the process of testing application programming interfaces (APIs) to ensure they meet functional, performance, security, and reliability requirements. APIs enable communication and data exchange between different software systems, and API testing validates that these interactions occur as expected.
+Types:
+Validation testing
+Functional testing
+Load testing
+Reliablility testing
+Security Testing
+Penetration Testing
+Fuzz Testing
+
+7. Api testing vs Unit testing:
+8. Black box vs white box testing: https://youtu.be/89VOHd8F8Ao?si=JsCRleTRUZXKBypt
+
+9.tools used for API testing:
+Postman
+Swagger
+soapui
+insomnia
+katelon studio
+junit with restassured
+cypress
+
+10. Bugs in API Testing
+Functional Bugs
+performance bugs
+security bugs
+interoperability bugs
+documentation bugs
+
+11. API Documentation: https://youtu.be/uGjhKYvOKNs?si=QANqtDmtueLup2Ti
+12. API Documentation Templates: 
+API documentation templates provide a structured format for documenting the details and specifications of an API, making it easier for developers and consumers to understand how to use the API effectively. 
+They are:
+Swagger
+APIBlueprint
+RAML(Restfull API Modeling Language)
+API Design Guide
+AsyncAPI Specification
+Postman collection
+
+13. Postman: https://youtu.be/E0f9DUEN_jI?si=Zlz_MIcHTbXdloAc
+14. There are two environment in postman they are global and local, where global envi will not have same name but local envi can have same name but it should be under different global envi
+
+15. Postman collection runner vs Postman monitor: The Collection Runner is used for manual or automated testing of APIs, while Postman Monitor is used for continuous monitoring and automation of API requests to ensure uptime and performance.
+
+16. Collection in postman is same as folder in your system
+
+17. Request methods: https://youtu.be/PO3kQeNMbaY?si=3FpM0OKaQN-4BNAa
+18. Status codes: https://youtu.be/qmpUfWN7hh4?si=-i0g8wa9GCiNi1F7
+19. Authentication vs Authorization: https://youtu.be/3wiFKt1O3-w?si=Yv49qMdyTgAS59J2
+
+20. Functional methods and Javascript methods are the two methods in which tests can be written in postman.
+21. Pre request vs Test scripts:
+
+Pre-request Script:
+
+Purpose: A pre-request script is executed before sending the actual API request. It allows you to modify the request parameters, headers, body, or environment variables before the request is sent to the server.
+
+Use Cases:
+
+Adding dynamic values to request parameters or headers (e.g., timestamp, random string).
+Calculating authentication tokens or signatures.
+Extracting values from previous responses and storing them in environment variables for later use.
+Access to Request Data: In the pre-request script, you can access the request object (pm.request) to modify the request properties before it is sent.
+
+Test Script:
+
+Purpose: A test script is executed after receiving the response from the server. It allows you to validate the response, extract data from the response, and perform various assertions based on the response content.
+
+Use Cases:
+
+Verifying the correctness of response data (e.g., status code, response body).
+Extracting data from the response and storing it in environment variables for subsequent requests.
+Performing complex validations or calculations based on the response data.
+Access to Response Data: In the test script, you can access the response object (pm.response) to access response properties and perform assertions.
+
+22. WSDL: https://youtu.be/MUq_RkG7De0?si=dlekxrbL_Tl-F5Rr
+23. Hierarchy of Soapui
+Testsuite
+testcase
+teststep
+
+24. Assertion is used to compare the Response message to the expected outcome
+
+25. Types of assertion:
+Status code assertion
+response body assertion
+response header assertion
+response time assertion
+response size assertion
+cookie assertion
+xml assertion
+scripted assertion
+
+26. Data driven testing: Data-driven testing is a technique in software testing where test cases are executed multiple times with different sets of test data. This approach allows testers to validate the behavior of an application across various input scenarios, ensuring robustness and reliability.
+
+27. Groovy scripts includes all the java libraries it helps us to customize and add custom validations to soapUI tests.
+
+28. Properties of SoapUI
+Project properties
+testsuite properties
+testcase properties
+global properties
+environment properties
+response properties
+properties expansion
+

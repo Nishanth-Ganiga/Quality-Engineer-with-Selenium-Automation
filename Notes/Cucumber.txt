@@ -1,0 +1,118 @@
+1. Tools that support BDD
+Cucumber
+SpecFlow
+Behave (Python)
+JBehave
+RSpec (Ruby)
+Karate
+Gauge
+Robot Framework
+
+2. BDD and Cucumber : https://youtu.be/cq_3wPnaX-w?si=tAkliUZwsj7iFChf
+3. Cucumber syntax: https://youtu.be/MGldZa6amD8?si=-OLysSc2ZD85FLCp
+Feature:
+Scenario:
+
+Given:
+When:
+And:
+Then:
+But: 
+
+4. Components of Cucumber:
+Feature Files: Text files written in Gherkin syntax that describe the desired behavior of the system in a human-readable format.
+ex:
+Feature: Login Functionality
+  As a user
+  I want to login to the system
+  So that I can access my account
+
+  Scenario: Successful Login
+    Given I am on the login page
+    When I enter valid credentials
+    And I click the login button
+    Then I should be logged into the system
+
+
+Scenarios: Concrete examples of how the system should behave under different conditions, outlined within feature files.
+
+
+
+Step Definitions: Code snippets written in programming languages like Java or Ruby that define the automation logic for each step in the scenarios described in feature files.
+ex:
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class StepDefinitions {
+
+    @Given("I am on the login page")
+    public void i_am_on_the_login_page() {
+        // Code to navigate to the login page
+    }
+
+    @When("I enter valid credentials")
+    public void i_enter_valid_credentials() {
+        // Code to enter valid credentials
+    }
+
+    @When("I click the login button")
+    public void i_click_the_login_button() {
+        // Code to click the login button
+    }
+
+    @Then("I should be logged into the system")
+    public void i_should_be_logged_into_the_system() {
+        // Code to verify successful login
+    }
+}
+
+
+
+Hooks: Predefined actions that execute before or after scenarios, allowing setup and teardown tasks to be performed.
+ex:
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+
+public class Hooks {
+
+    @Before
+    public void setUp() {
+        // Code to perform setup tasks before scenario execution
+    }
+
+    @After
+    public void tearDown() {
+        // Code to perform teardown tasks after scenario execution
+    }
+}
+
+
+
+
+Tags: Labels applied to scenarios and features to categorize and selectively execute tests.
+ex:
+@Regression @Login
+Feature: Login Functionality
+  As a user
+  I want to login to the system
+  So that I can access my account
+
+  @Smoke
+  Scenario: Successful Login
+    Given I am on the login page
+    When I enter valid credentials
+    And I click the login button
+    Then I should be logged into the system
+
+
+
+Reports: Generated outputs that provide insights into test results, aiding in debugging and analysis.
+
+
+5. Pretty plugin:
+In Cucumber, when configuring the test runner using plugins, the "pretty" plugin is often used to generate human-readable output during test execution. It formats the test results in a clear and concise manner, making it easier for testers and stakeholders to understand the test progress and outcomes.
+
+The "pretty" plugin typically produces output in a structured format that resembles natural language, presenting information such as scenario names, step definitions, and their corresponding status (passed, failed, skipped) in a readable way. This formatted output can be particularly helpful when tests are run in continuous integration environments or when shared with non-technical team members.
+
+6. TestRunner : https://youtu.be/blBrmW-wrxs?si=H_x9toIsziPHYbcm

@@ -1,0 +1,21 @@
+1. Handle draganddrop
+clickandhold(webelement element)
+movetoelement(webelement element)
+build()
+release(webelement element)
+
+2. Handling alerts
+dismiss
+accept
+string gettext()
+void sendKeys(string stringtosend)
+
+3. Waits
+Pageloadtimeout
+setscripttimeout
+implicitwait
+explicitwait
+fluentwait
+sleep
+
+4. getWindowHandles() is used to handle the windows.
