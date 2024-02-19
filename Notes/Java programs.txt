@@ -1,0 +1,133 @@
+1. Palindrome
+
+class HelloWorld {
+    public static void main(String args[]) {
+        
+    String str = "121";
+    
+    if(isPalindrome(str)) {
+        System.out.println("Pallindrome");
+    }
+        else
+        {
+        System.out.println("not Pallindrome");
+    }
+}
+
+
+public static boolean isPalindrome(String str) {
+    int left = 0;
+    int right = str.length() - 1;
+    
+    while(left < right) {
+        if(str.charAt(left) != str.charAt(right)) {
+            return false;
+        }
+        
+        left++;
+        right--;
+        
+    }
+    return true;
+}
+}
+
+
+
+
+2. Factorial / recursion
+
+class HelloWorld {
+    public static void main(String args[]) {
+        int n = 8;
+        long fact = calfact(n);
+        System.out.print(n + "=" + fact);
+    }
+    
+    public static long calfact(int n) {
+        if(n==0) {
+            return 1;
+        }
+        else
+        {
+            return n*calfact(n-1);
+        }
+    }
+}
+
+
+3. Prime number
+
+class HelloWorld {
+    public static void main(String args[]) {
+        int l=10;
+        System.out.println(l + "is" + ":");
+        
+        for(int i=2;i<=l;i++){
+            boolean isPrime = true;
+            for(int j=2;j<=Math.sqrt(i);j++){
+                if(i%j==0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if(isPrime) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
+
+
+4. star pattern
+
+class hey { 
+	public static void main(String[] args) {
+		int r = 5; 
+		for(int i=0;i<r;i++) { 
+			for(int j=0;j<r-i-1;j++) { 
+				System.out.print(" "); 
+			} 
+			for(int k=0;k<2*i+1;k++) { 
+				System.out.print("*"); 
+			} 
+		System.out.println(); 
+		} 
+	} 
+}
+
+5. Armstrong number
+
+import java.util.Scanner;
+
+public class ArmstrongNumber {
+    
+    // Function to check if a number is an Armstrong number
+    static boolean isArmstrong(int num) {
+        int originalNum, remainder, result = 0;
+        originalNum = num;
+        
+        // Calculates the sum of cubes of digits
+        while (originalNum != 0) {
+            remainder = originalNum % 10;
+            result += Math.pow(remainder, 3);
+            originalNum /= 10;
+        }
+        
+        // Checks if the sum is equal to the original number
+        return result == num;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        
+        if (isArmstrong(number)) {
+            System.out.println(number + " is an Armstrong number.");
+        } else {
+            System.out.println(number + " is not an Armstrong number.");
+        }
+        scanner.close();
+    }
+}
