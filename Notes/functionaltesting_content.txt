@@ -1,0 +1,5 @@
+1. QA vs QC: https://youtu.be/0viDDeGLODs?si=-AquuIa6GhZAM7st
+2. Verification & validation: https://youtu.be/fxXZf4zDjGQ?si=42xnxuljcyadZR-V
+3. static vs dynamic testing: https://youtu.be/ctd_Hoyh0CE?si=phn-eo06EJkWX375
+4. white vs black box testing: https://youtu.be/89VOHd8F8Ao?si=Qr5LsoHOhW2fIaPR
+5. 

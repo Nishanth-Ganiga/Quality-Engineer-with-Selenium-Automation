@@ -1,0 +1,65 @@
+1. oops: https://youtu.be/7GwptabrYyk?si=J-T6eoNQ-74hxfzH
+2. Abstract ex:
+// Abstract class representing a shape
+abstract class Shape {
+    // Abstract method to calculate area
+    abstract double calculateArea();
+    
+    // Concrete method to display a message
+    void display() {
+        System.out.println("This is a shape.");
+    }
+}
+
+// Concrete subclass representing a circle
+class Circle extends Shape {
+    double radius;
+    
+    Circle(double radius) {
+        this.radius = radius;
+    }
+    
+    @Override
+    double calculateArea() {
+        return Math.PI * radius * radius;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Circle circle = new Circle(5);
+        System.out.println("Area of the circle: " + circle.calculateArea()); // Output: Area of the circle: 78.53981633974483
+        circle.display(); // Output: This is a shape.
+    }
+}
+
+
+
+3. Final keyword ex:
+
+// FinalClassExample.java
+
+// Final class
+final class FinalClassExample {
+    // Final method
+    final void finalMethod() {
+        System.out.println("This is a final method.");
+    }
+}
+
+// Attempting to extend a final class (which will result in a compilation error)
+// class SubclassExample extends FinalClassExample {}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an instance of FinalClassExample
+        FinalClassExample finalObj = new FinalClassExample();
+        // Calling the final method
+        finalObj.finalMethod();
+    }
+}
+
+
+4. types of constructors: https://youtu.be/Fgnf2WsVRII?si=MzAJLEvsNbiqB3J_
+
+5. 
